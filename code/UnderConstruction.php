@@ -80,7 +80,7 @@ class UnderConstruction_Extension extends Extension {
       if (!Permission::check('ADMIN') 
           && strpos($_SERVER['REQUEST_URI'], '/admin') === false 
           && strpos($_SERVER['REQUEST_URI'], '/Security') === false 
-          && !Director::isDev() 
+//           && !Director::isDev() 
           && !$runningDevBuild) {
         Debug::friendlyError(503);
         exit;
